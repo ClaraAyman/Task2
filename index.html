@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="import" href="component.html" />
+  </head>
+  <body class="">
+    <header>
+      <!-- <nav
+        class="top-0 left-0 z-10 sticky flex justify-between bg-gray-800 p-4 w-full"
+      > -->
+      <nav
+        class="top-0 left-0 z-3 fixed flex justify-between bg-gray-800 drop-shadow-xl p-4 rounded-lg w-full"
+      >
+        <div>
+          <img src="Logo.webp" alt="logo" class="ml-5 w-25 h-20" />
+        </div>
+
+        <div class="flex justify-between items-center p-5 text-2xl text-white">
+          <div class="md:flex gap-6 hidden">
+            <a href="#Home" class="hover:text-gray-400">Home</a>
+            <a href="login.html" class="hover:text-gray-400">Login</a>
+            <a href="#About Us" class="hover:text-gray-400">About us</a>
+          </div>
+          <div class="md:hidden">
+            <i
+              class="cursor-pointer fa-bars fa-solid"
+              onclick="toggleMenu()"
+            ></i>
+          </div>
+        </div>
+
+        <!-- <div
+          id="mobileMenu"
+          class="right-0 absolute flex flex-col hidden md:hidden bg-gray-900 p-4 text-white"
+        > -->
+        <div
+          id="mobileMenu"
+          class="top-20 right-0 absolute flex flex-col hidden md:hidden bg-gray-900 p-4 text-white"
+        >
+          <a href="#Home" class="hover:text-gray-400">Home</a>
+          <a href="login.html" class="hover:text-gray-400">Login</a>
+          <a href="#About Us" class="hover:text-gray-400">About us</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="bg-[url(Homephoto.webp)] opacity-75 mt-26 h-[100vh] home">
+        <div id="Home" class="flex justify-center">
+          <p class="flex mt-60 font-serif text-9xl animate-bounce">Hello</p>
+        </div>
+      </section>
+      <section class="in log">
+        <div class="bg-gray-300 h-[200vh]"></div>
+      </section>
+      <section id="About Us" class="About Us">
+        <div class="grid grid-cols-3 bg-gray-600 h-[100vh] text-white">
+          <div
+            class="flex flex-col bg-gray-700 hover:bg-gray-800 shadow-lg rounded-lg w-30 md:w-50 h-40 md:h-60"
+          >
+            <a>learn</a>
+            <a>documantaion</a>
+            <a>blog</a>
+            <a>playground</a>
+          </div>
+          <div
+            class="flex flex-col bg-gray-700 hover:bg-gray-800 shadow-lg rounded-lg w-30 md:w-50 h-40 md:h-60"
+          >
+            <a>learn</a>
+            <a>documantaion</a>
+            <a>blog</a>
+            <a>playground</a>
+          </div>
+          <div
+            class="flex flex-col bg-gray-700 hover:bg-gray-800 shadow-lg rounded-lg w-30 md:w-50 h-40 md:h-60"
+          >
+            <a>learn</a>
+            <a>documantaion</a>
+            <a>blog</a>
+            <a>playground</a>
+          </div>
+          <div
+            class="flex flex-col bg-gray-700 hover:bg-gray-800 shadow-lg rounded-lg w-30 md:w-50 h-40 md:h-60"
+          >
+            <a>learn</a>
+            <a>documantaion</a>
+            <a>blog</a>
+            <a>playground</a>
+          </div>
+          <div
+            class="flex flex-col bg-gray-700 hover:bg-gray-800 shadow-lg p-6 rounded-lg w-30 md:w-50 h-40 md:h-60"
+          >
+            <a>learn</a>
+            <a>documantaion</a>
+            <a>blog</a>
+            <a>playground</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- <script> -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
